@@ -68,7 +68,7 @@ function wpcf7_text_shortcode_handler( $tag ) {
 		$value = $values[0];
 	}
 
-	$html = '<input type="text" name="' . $name . '" value="' . esc_attr( $value ) . '"' . $atts . ' />';
+	$html = '<input type="text" id="' . $name . '" name="' . $name . '" value="' . esc_attr( $value ) . '"' . $atts . ' />';
 
 	$validation_error = '';
 	if ( is_a( $wpcf7_contact_form, 'WPCF8_ContactForm' ) )
